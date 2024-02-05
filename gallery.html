@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout with Images and Descriptions</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .grid-item {
+            border: 1px solid #ddd;
+            padding: 20px;
+            text-align: center;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            overflow: hidden; /* Improved clipping */
+        }
+
+        .grid-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            filter: grayscale(10%) sepia(20%); /* Added image filter */
+        }
+
+        p {
+            margin: 0;
+            font-size: 16px;
+            color: #555;
+        }
+
+        /* Additional Styles */
+        h1 {
+            text-align: center;
+            color: #4285f4;
+        }
+
+        /* Custom Cursor */
+        .grid-item:hover {
+            cursor: pointer;
+        }
+
+        /* CSS Gradient Borders */
+        .grid-item {
+            border: 1px solid;
+            border-image: linear-gradient(to right, #ff7e5f, #feb47b, #ffd08a, #93e0ff);
+            border-image-slice: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Beautiful Image Grid</h1>
+
+    <div class="grid-container">
+        <!-- Repeat the following structure for each grid item -->
+        <div class="grid-item">
+            <img src="opm.jpg" alt="Image 1">
+            <p>Ready for battle Saitama?</p>
+        </div>
+
+        <div class="grid-item">
+            <img src="uzumaki.jpg" alt="Image 2">
+            <p>idk man</p>
+        </div>
+
+        <div class="grid-item">
+            <img src="susonic.jpg" alt="Image 3">
+            <p>Super Sonic to the rescue</p>
+        </div>
+
+            <div class="grid-item">
+                <img src="chainsawman.jpg" alt="Image 4">
+                <p>Pondering</p>
+            </div>
+
+            <div class="grid-item">
+                <img src="makima.jpg" alt="Image 5">
+                <p>Just Makima</p>
+            </div>
+
+            <div class="grid-item">
+                <img src="shinra.jpg" alt="Image 6">
+                <p>Shinra meets his Mom</p>
+            </div>
+
+            <div class="grid-item">
+                <img src="luffy.jpg" alt="Image 7">
+                <p>luffy getting ready for battle</p>
+            </div>
+
+            <div class="grid-item">
+                <img src="ghoul.jpg" alt="Image 8">
+                <p>ghoul in distress</p>
+            </div>
+
+        <!-- Add more grid-item divs as needed -->
+
+    </div>
+
+</body>
+
+</html>
+
+
+
